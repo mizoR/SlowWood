@@ -26,6 +26,27 @@
 			remoteGlobalIDString = F56565CD1A2BDC4B0039858B;
 			remoteInfo = SlowWood;
 		};
+		F56974EB1A2BE3B600DB969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
+			remoteInfo = Dollar;
+		};
+		F56974ED1A2BE3B600DB969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
+			remoteInfo = DollarTests;
+		};
+		F56974EF1A2BE41000DB969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 92E0D03B19467C67002ACC3D;
+			remoteInfo = Dollar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +66,7 @@
 		F56974E11A2BDF7100DB969E /* SlowWood-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SlowWood-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56974E21A2BE13D00DB969E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F56974E41A2BE1AE00DB969E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = Submodules/github.com/ankurp/Dollar.swift/Dollar/Dollar.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,7 @@
 		F56565D01A2BDC4B0039858B /* SlowWood */ = {
 			isa = PBXGroup;
 			children = (
+				F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */,
 				F56565D31A2BDC4B0039858B /* AppDelegate.swift */,
 				F56565D51A2BDC4B0039858B /* ViewController.swift */,
 				F56565D71A2BDC4B0039858B /* Main.storyboard */,
@@ -144,6 +167,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F56974E71A2BE3B600DB969E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56974EC1A2BE3B600DB969E /* Dollar.framework */,
+				F56974EE1A2BE3B600DB969E /* DollarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +192,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F56974F01A2BE41000DB969E /* PBXTargetDependency */,
 			);
 			name = SlowWood;
 			productName = SlowWood;
@@ -213,6 +246,12 @@
 			mainGroup = F56565C51A2BDC4B0039858B;
 			productRefGroup = F56565CF1A2BDC4B0039858B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F56974E71A2BE3B600DB969E /* Products */;
+					ProjectRef = F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F56565CD1A2BDC4B0039858B /* SlowWood */,
@@ -220,6 +259,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F56974EC1A2BE3B600DB969E /* Dollar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dollar.framework;
+			remoteRef = F56974EB1A2BE3B600DB969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F56974EE1A2BE3B600DB969E /* DollarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DollarTests.xctest;
+			remoteRef = F56974ED1A2BE3B600DB969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F56565CC1A2BDC4B0039858B /* Resources */ = {
@@ -301,6 +357,11 @@
 			isa = PBXTargetDependency;
 			target = F56565CD1A2BDC4B0039858B /* SlowWood */;
 			targetProxy = F56565E41A2BDC4B0039858B /* PBXContainerItemProxy */;
+		};
+		F56974F01A2BE41000DB969E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dollar;
+			targetProxy = F56974EF1A2BE41000DB969E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

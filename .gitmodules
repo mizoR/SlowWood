@@ -1,0 +1,3 @@
+[submodule "Submodules/github.com/ankurp/Dollar.swift"]
+	path = Submodules/github.com/ankurp/Dollar.swift
+	url = https://github.com/ankurp/Dollar.swift.git

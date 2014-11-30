@@ -1,4 +1,5 @@
 import UIKit
+import Dollar
 
 class ViewController: UIViewController {
 
@@ -9,6 +10,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         Logger.info("Hello World")
+
+        var isContained = $.contains([1, 2, 3, 1, 2, 3], value: 4)
+        Logger.info("\(isContained)")
+
     }
 
     override func didReceiveMemoryWarning() {
