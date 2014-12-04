@@ -25,9 +25,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
 
-        cell.textLabel?.text = texts[indexPath.row]
+        cell.textLabel.text = texts[indexPath.row]
+
         return cell
     }
 
@@ -39,7 +40,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func showAlert() {
-        let alert: UIAlertController = UIAlertController(title: "Title", message: Fortune.sample(), preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Title", message: Fortune.sample(), preferredStyle: UIAlertControllerStyle.Alert)
         let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { action in Logger.info("action: \(action)") }
 
         alert.addAction(ok)
