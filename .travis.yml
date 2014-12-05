@@ -1,3 +1,4 @@
 language: objective-c
 script:
+  - xcodebuild -version
   - xcodebuild test -workspace SlowWood.xcworkspace -scheme SlowWood -sdk iphonesimulator
