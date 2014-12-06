@@ -33,17 +33,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        if indexPath.row == 0 {
-            showAlert()
-        }
         Logger.info("click: \(texts[indexPath.row])")
-    }
-    
-    func showAlert() {
-        let alert = UIAlertController(title: "Title", message: Fortune.sample(), preferredStyle: UIAlertControllerStyle.Alert)
-        let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { action in Logger.info("action: \(action)") }
 
-        alert.addAction(ok)
-        self.presentViewController(alert, animated: true) { Logger.info("Complete") }
+        switch indexPath.row {
+        case 0:
+            var factory = AlertDialogLessonFactory(viewController: self)
+            var lesson = factory.create()
+
+            lesson.start()
+        default:
+            break
+        }
     }
 }
