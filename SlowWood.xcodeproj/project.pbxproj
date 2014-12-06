@@ -13,7 +13,7 @@
 		F56565DE1A2BDC4B0039858B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56565DC1A2BDC4B0039858B /* LaunchScreen.xib */; };
 		F56565EA1A2BDC4B0039858B /* SlowWoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56565E91A2BDC4B0039858B /* SlowWoodTests.swift */; };
 		F56974E31A2BE13D00DB969E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56974E21A2BE13D00DB969E /* Logger.swift */; };
-		F56974E51A2BE1AE00DB969E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56974E41A2BE1AE00DB969E /* Alert.swift */; };
+		F59900531A302DA700D876E3 /* Fortune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59900521A302DA700D876E3 /* Fortune.swift */; };
 		F5BF0E191A2ECEF100C0C853 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */; };
 		F5BF0E1B1A2ECFE300C0C853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -63,8 +63,8 @@
 		F56565E91A2BDC4B0039858B /* SlowWoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowWoodTests.swift; sourceTree = "<group>"; };
 		F56974E11A2BDF7100DB969E /* SlowWood-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SlowWood-Bridging-Header.h"; sourceTree = "<group>"; };
 		F56974E21A2BE13D00DB969E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		F56974E41A2BE1AE00DB969E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = Submodules/github.com/ankurp/Dollar.swift/Dollar/Dollar.xcodeproj; sourceTree = SOURCE_ROOT; };
+		F59900521A302DA700D876E3 /* Fortune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fortune.swift; sourceTree = "<group>"; };
 		F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,9 +135,9 @@
 				F56565D11A2BDC4B0039858B /* Supporting Files */,
 				F56974E11A2BDF7100DB969E /* SlowWood-Bridging-Header.h */,
 				F56974E21A2BE13D00DB969E /* Logger.swift */,
-				F56974E41A2BE1AE00DB969E /* Alert.swift */,
 				F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */,
 				F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */,
+				F59900521A302DA700D876E3 /* Fortune.swift */,
 			);
 			path = SlowWood;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56974E31A2BE13D00DB969E /* Logger.swift in Sources */,
-				F56974E51A2BE1AE00DB969E /* Alert.swift in Sources */,
+				F59900531A302DA700D876E3 /* Fortune.swift in Sources */,
 				F56565D41A2BDC4B0039858B /* AppDelegate.swift in Sources */,
 				F5BF0E191A2ECEF100C0C853 /* MainViewController.swift in Sources */,
 			);
