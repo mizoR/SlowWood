@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SlowWood
-//
-//  Created by ryutaro_mizokami on 2014/12/01.
-//  Copyright (c) 2014年 ryutaro_mizokami. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
