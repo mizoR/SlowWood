@@ -13,6 +13,6 @@ class LessonFactory {
 
     // 抽象メソッドとして定義したい
     func newLesson(viewController: UIViewController) -> Lesson {
-        return Lesson(viewController: viewController)
+        fatalError("`\(__FUNCTION__)` must be overridden")
     }
 }

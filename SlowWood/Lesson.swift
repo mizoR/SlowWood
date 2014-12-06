@@ -7,5 +7,7 @@ class Lesson {
         self.viewController = viewController
     }
 
-    func start() {}
+    func start() {
+        fatalError("`\(__FUNCTION__)` must be overridden")
+    }
 }
