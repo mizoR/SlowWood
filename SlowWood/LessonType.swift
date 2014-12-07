@@ -4,6 +4,11 @@ enum LessonType: Int {
     case AlertDialog = 0
     case SVProgressHUD
 
+    static let data = [
+        AlertDialog,
+        SVProgressHUD,
+    ]
+
     func title() -> String {
         var title = "\(self.rawValue). "
 
@@ -31,7 +36,6 @@ enum LessonType: Int {
     }
 
     static func count() -> Int {
-        // XXX: 動的に計算したい
-        return 2
+        return data.count
     }
 }
