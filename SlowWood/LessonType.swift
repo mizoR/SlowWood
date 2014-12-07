@@ -10,26 +10,22 @@ enum LessonType: Int {
     ]
 
     func title() -> String {
-        var title = "\(self.rawValue). "
-
         switch self {
         case .AlertDialog:
-            title += AlertDialogLesson.title()
+            return "Show alert dialog with UIAlertController"
         case .SVProgressHUD:
-            title += SVProgressHUDLesson.title()
+            return "Show progress dialog with SVProgressHUD"
         default:
-            title += "Title is not defined"
+            "no title"
         }
-
-        return title
     }
 
-    func createFactory(viewController: UIViewController) -> LessonFactory {
+    func createFactory() -> LessonFactory {
         switch self {
         case .AlertDialog:
-            return AlertDialogLessonFactory(viewController: viewController)
+            return AlertDialogLessonFactory()
         case .SVProgressHUD:
-            return SVProgressHUDLessonFactory(viewController: viewController)
+            return SVProgressHUDLessonFactory()
         default:
             fatalError("Factoryクラスの生成処理が定義されていません: \(self)")
         }

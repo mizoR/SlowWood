@@ -151,6 +151,7 @@
 				F56565DC1A2BDC4B0039858B /* LaunchScreen.xib */,
 				6A29E8471A33BBE100D06F75 /* Lesson.swift */,
 				6A75E36B1A33C9FC00162D83 /* LessonFactory.swift */,
+				6A75E37D1A33DC4700162D83 /* LessonType.swift */,
 				F56974E21A2BE13D00DB969E /* Logger.swift */,
 				F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */,
 				F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */,
@@ -158,7 +159,6 @@
 				F56565D11A2BDC4B0039858B /* Supporting Files */,
 				6A75E36F1A33CD9100162D83 /* SVProgressHUDLesson.swift */,
 				6A75E3721A33CDE000162D83 /* SVProgressHUDLessonFactory.swift */,
-				6A75E37D1A33DC4700162D83 /* LessonType.swift */,
 			);
 			path = SlowWood;
 			sourceTree = "<group>";

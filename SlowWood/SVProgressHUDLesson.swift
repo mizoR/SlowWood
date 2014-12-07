@@ -1,10 +1,6 @@
 import Foundation
 
 class SVProgressHUDLesson: Lesson {
-    override class func title() -> String {
-        return "Show progress dialog with SVProgressHUD"
-    }
-
     override func start() {
         SVProgressHUD.show()
 

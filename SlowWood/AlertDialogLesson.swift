@@ -1,10 +1,6 @@
 import Foundation
 
 class AlertDialogLesson: Lesson {
-    override class func title() -> String {
-        return "Show alert dialog with UIAlertController"
-    }
-
     override func start() {
         let alert = UIAlertController(title: "Title", message: Fortune.sample(), preferredStyle: UIAlertControllerStyle.Alert)
         let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { action in Logger.info("action: \(action)") }

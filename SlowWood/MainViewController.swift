@@ -33,8 +33,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         Logger.info("click: \(indexPath.row)")
 
         if let lessonType = LessonType.init(rawValue: indexPath.row) {
-            var factory = lessonType.createFactory(self)
-            var lesson = factory.create()
+            var factory = lessonType.createFactory()
+            var lesson = factory.create(self)
             lesson.start()
         }
     }

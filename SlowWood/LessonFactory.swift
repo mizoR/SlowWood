@@ -1,14 +1,8 @@
 import Foundation
 
 class LessonFactory {
-    var viewController: UIViewController
-
-    init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
-
-    func create() -> Lesson {
-        return newLesson(self.viewController)
+    func create(viewController: UIViewController) -> Lesson {
+        return newLesson(viewController)
     }
 
     // 抽象メソッドとして定義したい
