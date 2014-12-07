@@ -23,7 +23,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
 
         if let lessonType = LessonType.init(rawValue: indexPath.row) {
-            cell.textLabel?.text = lessonType.title()
+            cell.textLabel.text = lessonType.title()
         }
 
         return cell
