@@ -27,7 +27,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
 
-        cell.textLabel?.text = texts[indexPath.row]
+        cell.textLabel.text = texts[indexPath.row]
 
         return cell
     }
