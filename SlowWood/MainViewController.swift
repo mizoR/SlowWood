@@ -3,15 +3,15 @@ import Foundation
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let texts = [
         "1. UIAlertController",
-        "2. Coming soon...",
+        "2. SVProgressHUD",
         "3. Coming soon...",
     ]
-    
+
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -23,7 +23,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return texts.count
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
 
@@ -38,6 +38,11 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         switch indexPath.row {
         case 0:
             var factory = AlertDialogLessonFactory(viewController: self)
+            var lesson = factory.create()
+
+            lesson.start()
+        case 1:
+            var factory = SVProgressHUDLessonFactory(viewController: self)
             var lesson = factory.create()
 
             lesson.start()
