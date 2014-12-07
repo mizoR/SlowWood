@@ -1,11 +1,6 @@
 import Foundation
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let texts = [
-        "1. UIAlertController",
-        "2. SVProgressHUD",
-        "3. Coming soon...",
-    ]
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -21,33 +16,26 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return texts.count
+        return LessonType.count()
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
 
-        cell.textLabel.text = texts[indexPath.row]
+        if let lessonType = LessonType.init(rawValue: indexPath.row) {
+            cell.textLabel?.text = lessonType.title()
+        }
 
         return cell
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        Logger.info("click: \(texts[indexPath.row])")
+        Logger.info("click: \(indexPath.row)")
 
-        switch indexPath.row {
-        case 0:
-            var factory = AlertDialogLessonFactory(viewController: self)
+        if let lessonType = LessonType.init(rawValue: indexPath.row) {
+            var factory = lessonType.createFactory(self)
             var lesson = factory.create()
-
             lesson.start()
-        case 1:
-            var factory = SVProgressHUDLessonFactory(viewController: self)
-            var lesson = factory.create()
-
-            lesson.start()
-        default:
-            break
         }
     }
 }

@@ -10,4 +10,8 @@ class Lesson {
     func start() {
         fatalError("`\(__FUNCTION__)` must be overridden")
     }
+ 
+    class func title() -> String {
+        fatalError("`\(__FUNCTION__)` must be overridden")
+    }
 }
