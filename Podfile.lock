@@ -1,10 +1,10 @@
 PODS:
-  - SVProgressHUD (HEAD based on 1.1)
+  - SVProgressHUD (HEAD based on 1.1.1)
 
 DEPENDENCIES:
   - SVProgressHUD (HEAD)
 
 SPEC CHECKSUMS:
-  SVProgressHUD: 6e281683bfd31a22eb6a6401933f714c0b26fc63
+  SVProgressHUD: 11ef69ab2582c097479e76905ea916470371fc58
 
 COCOAPODS: 0.35.0
