@@ -6,6 +6,8 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Web view"
+
         webView.delegate = self
 
         let url = NSURL(string: "http://google.com/")
