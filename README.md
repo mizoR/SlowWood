@@ -18,7 +18,8 @@ $ cd SlowWood
 ### Submodule の取得
 
 ```sh
-$ git submodule init
+$ git submodule init      # 初回だけ
+$ git submodule update
 ```
 
 ### gem をインストール
@@ -27,7 +28,7 @@ $ git submodule init
 $ bundle install
 ```
 
-### Objective-C のライブラリ軍をインストール
+### Objective-C のライブラリをインストール
 
 ```sh
 $ bundle exec pod setup     # 初回だけ
