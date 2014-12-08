@@ -3,10 +3,12 @@ import Foundation
 enum LessonType: Int {
     case AlertDialog = 0
     case SVProgressHUD
+    case WebView
 
     static let data = [
         AlertDialog,
         SVProgressHUD,
+        WebView,
     ]
 
     func title() -> String {
@@ -15,6 +17,8 @@ enum LessonType: Int {
             return "Show alert dialog with UIAlertController"
         case .SVProgressHUD:
             return "Show progress dialog with SVProgressHUD"
+        case .WebView:
+            return "Show web with UIWebView"
         default:
             "no title"
         }
@@ -26,6 +30,8 @@ enum LessonType: Int {
             return AlertDialogLessonFactory()
         case .SVProgressHUD:
             return SVProgressHUDLessonFactory()
+        case .WebView:
+            return WebViewLessonFactory()
         default:
             fatalError("Factoryクラスの生成処理が定義されていません: \(self)")
         }

@@ -23,6 +23,8 @@
 		F59900531A302DA700D876E3 /* Fortune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59900521A302DA700D876E3 /* Fortune.swift */; };
 		F5BF0E191A2ECEF100C0C853 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */; };
 		F5BF0E1B1A2ECFE300C0C853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */; };
+		F5FCBCC71A356DAD00A89029 /* WebViewLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FCBCC61A356DAD00A89029 /* WebViewLesson.swift */; };
+		F5FCBCCA1A356DEB00A89029 /* WebViewLessonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FCBCC91A356DEB00A89029 /* WebViewLessonFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		F59900521A302DA700D876E3 /* Fortune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fortune.swift; sourceTree = "<group>"; };
 		F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F5FCBCC61A356DAD00A89029 /* WebViewLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLesson.swift; sourceTree = "<group>"; };
+		F5FCBCC91A356DEB00A89029 /* WebViewLessonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLessonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				F56565D11A2BDC4B0039858B /* Supporting Files */,
 				6A75E36F1A33CD9100162D83 /* SVProgressHUDLesson.swift */,
 				6A75E3721A33CDE000162D83 /* SVProgressHUDLessonFactory.swift */,
+				F5FCBCC61A356DAD00A89029 /* WebViewLesson.swift */,
+				F5FCBCC91A356DEB00A89029 /* WebViewLessonFactory.swift */,
 			);
 			path = SlowWood;
 			sourceTree = "<group>";
@@ -359,8 +365,10 @@
 				6A75E36A1A33C9F400162D83 /* AlertDialogLesson.swift in Sources */,
 				F56974E31A2BE13D00DB969E /* Logger.swift in Sources */,
 				6A75E36C1A33C9FC00162D83 /* LessonFactory.swift in Sources */,
+				F5FCBCC71A356DAD00A89029 /* WebViewLesson.swift in Sources */,
 				F59900531A302DA700D876E3 /* Fortune.swift in Sources */,
 				6A75E3731A33CDE000162D83 /* SVProgressHUDLessonFactory.swift in Sources */,
+				F5FCBCCA1A356DEB00A89029 /* WebViewLessonFactory.swift in Sources */,
 				6A75E37E1A33DC4700162D83 /* LessonType.swift in Sources */,
 				6A29E8481A33BBE100D06F75 /* Lesson.swift in Sources */,
 				6A29E84C1A33BCB900D06F75 /* AlertDialogLessonFactory.swift in Sources */,
