@@ -7,11 +7,10 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
 
         webView.delegate = self
-        webView.scalesPageToFit = true
 
         let url = NSURL(string: "http://google.com/")
         let request = NSURLRequest(URL: url!)
-        
+
         webView.loadRequest(request)
     }
 }

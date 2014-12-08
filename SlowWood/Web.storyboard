@@ -16,12 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-S3-z7a">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-S3-z7a">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IrO-S3-z7a" firstAttribute="leading" secondItem="8B3-Nd-5hV" secondAttribute="leading" id="2rs-Nj-BGR"/>
+                            <constraint firstAttribute="trailing" secondItem="IrO-S3-z7a" secondAttribute="trailing" id="DDV-fC-D9U"/>
+                            <constraint firstItem="Id5-1V-IYn" firstAttribute="top" secondItem="IrO-S3-z7a" secondAttribute="bottom" id="HnM-PN-6fF"/>
+                            <constraint firstItem="IrO-S3-z7a" firstAttribute="top" secondItem="8B3-Nd-5hV" secondAttribute="top" id="Nae-1K-LbU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="webView" destination="IrO-S3-z7a" id="jL0-Ka-mm3"/>
