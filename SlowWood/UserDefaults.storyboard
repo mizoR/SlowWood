@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ctW-ao-gnU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Defaults Lesson-->
+        <scene sceneID="f0m-x2-Uis">
+            <objects>
+                <viewController title="User Defaults Lesson" id="ctW-ao-gnU" customClass="UserDefaultsViewController" customModule="SlowWood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BI6-j3-JOM"/>
+                        <viewControllerLayoutGuide type="bottom" id="IRr-SW-dBh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nh7-7o-u9d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrh-ZD-Hcv">
+                                <rect key="frame" x="268" y="200" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fhw-rR-c8j"/>
+                                    <constraint firstAttribute="width" constant="64" id="ggM-6o-XQc"/>
+                                </constraints>
+                                <state key="normal" title="Count up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="counter:" destination="ctW-ao-gnU" eventType="touchDown" id="lto-Fg-2qV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show count of clicks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27x-sF-q64">
+                                <rect key="frame" x="150" y="100" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3dI-Db-ksk"/>
+                                    <constraint firstAttribute="height" constant="21" id="dCH-Se-h04"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wrh-ZD-Hcv" firstAttribute="top" secondItem="nh7-7o-u9d" secondAttribute="top" constant="200" id="0ax-go-oFo"/>
+                            <constraint firstItem="27x-sF-q64" firstAttribute="top" secondItem="nh7-7o-u9d" secondAttribute="topMargin" constant="100" id="1Um-dZ-wdK"/>
+                            <constraint firstAttribute="centerX" secondItem="wrh-ZD-Hcv" secondAttribute="centerX" id="bbY-2C-wKE"/>
+                            <constraint firstAttribute="centerX" secondItem="27x-sF-q64" secondAttribute="centerX" id="cpr-fi-MhD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countUpButton" destination="wrh-ZD-Hcv" id="jIu-oL-9h2"/>
+                        <outlet property="counterLabel" destination="27x-sF-q64" id="fXb-YO-xFo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anR-bH-lyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="336"/>
+        </scene>
+    </scenes>
+</document>
