@@ -15,6 +15,10 @@
 		6A75E3701A33CD9100162D83 /* SVProgressHUDLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75E36F1A33CD9100162D83 /* SVProgressHUDLesson.swift */; };
 		6A75E3731A33CDE000162D83 /* SVProgressHUDLessonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75E3721A33CDE000162D83 /* SVProgressHUDLessonFactory.swift */; };
 		6A75E37E1A33DC4700162D83 /* LessonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A75E37D1A33DC4700162D83 /* LessonType.swift */; };
+		F53194C21A36BB9600D51E96 /* UserDefalutsLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53194C11A36BB9600D51E96 /* UserDefalutsLesson.swift */; };
+		F53194C51A36BBAC00D51E96 /* UserDefaultsLessonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53194C41A36BBAC00D51E96 /* UserDefaultsLessonFactory.swift */; };
+		F53194C71A36BBC100D51E96 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53194C61A36BBC100D51E96 /* UserDefaultsViewController.swift */; };
+		F53194C91A36BBDE00D51E96 /* UserDefaults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53194C81A36BBDE00D51E96 /* UserDefaults.storyboard */; };
 		F56565D41A2BDC4B0039858B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56565D31A2BDC4B0039858B /* AppDelegate.swift */; };
 		F56565DB1A2BDC4B0039858B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56565DA1A2BDC4B0039858B /* Images.xcassets */; };
 		F56565DE1A2BDC4B0039858B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56565DC1A2BDC4B0039858B /* LaunchScreen.xib */; };
@@ -71,6 +75,10 @@
 		6A75E37D1A33DC4700162D83 /* LessonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonType.swift; sourceTree = "<group>"; };
 		C8A24767993BA9DFB87E8298 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F3E660E20C9B3DEE6700DC7D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53194C11A36BB9600D51E96 /* UserDefalutsLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefalutsLesson.swift; sourceTree = "<group>"; };
+		F53194C41A36BBAC00D51E96 /* UserDefaultsLessonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsLessonFactory.swift; sourceTree = "<group>"; };
+		F53194C61A36BBC100D51E96 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		F53194C81A36BBDE00D51E96 /* UserDefaults.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDefaults.storyboard; sourceTree = "<group>"; };
 		F56565CE1A2BDC4B0039858B /* SlowWood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowWood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56565D21A2BDC4B0039858B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F56565D31A2BDC4B0039858B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +179,10 @@
 				F5FCBCC91A356DEB00A89029 /* WebViewLessonFactory.swift */,
 				F5FCBCCB1A356F8100A89029 /* WebViewController.swift */,
 				F5FCBCCD1A35702700A89029 /* Web.storyboard */,
+				F53194C11A36BB9600D51E96 /* UserDefalutsLesson.swift */,
+				F53194C41A36BBAC00D51E96 /* UserDefaultsLessonFactory.swift */,
+				F53194C61A36BBC100D51E96 /* UserDefaultsViewController.swift */,
+				F53194C81A36BBDE00D51E96 /* UserDefaults.storyboard */,
 			);
 			path = SlowWood;
 			sourceTree = "<group>";
@@ -319,6 +331,7 @@
 				F5BF0E1B1A2ECFE300C0C853 /* Main.storyboard in Resources */,
 				F56565DB1A2BDC4B0039858B /* Images.xcassets in Resources */,
 				F5FCBCCE1A35702700A89029 /* Web.storyboard in Resources */,
+				F53194C91A36BBDE00D51E96 /* UserDefaults.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,18 +382,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53194C71A36BBC100D51E96 /* UserDefaultsViewController.swift in Sources */,
 				6A75E36A1A33C9F400162D83 /* AlertDialogLesson.swift in Sources */,
 				F56974E31A2BE13D00DB969E /* Logger.swift in Sources */,
 				6A75E36C1A33C9FC00162D83 /* LessonFactory.swift in Sources */,
 				F5FCBCC71A356DAD00A89029 /* WebViewLesson.swift in Sources */,
 				F59900531A302DA700D876E3 /* Fortune.swift in Sources */,
 				6A75E3731A33CDE000162D83 /* SVProgressHUDLessonFactory.swift in Sources */,
+				F53194C21A36BB9600D51E96 /* UserDefalutsLesson.swift in Sources */,
 				F5FCBCCA1A356DEB00A89029 /* WebViewLessonFactory.swift in Sources */,
 				6A75E37E1A33DC4700162D83 /* LessonType.swift in Sources */,
 				6A29E8481A33BBE100D06F75 /* Lesson.swift in Sources */,
 				6A29E84C1A33BCB900D06F75 /* AlertDialogLessonFactory.swift in Sources */,
 				F56565D41A2BDC4B0039858B /* AppDelegate.swift in Sources */,
 				F5FCBCCC1A356F8100A89029 /* WebViewController.swift in Sources */,
+				F53194C51A36BBAC00D51E96 /* UserDefaultsLessonFactory.swift in Sources */,
 				6A75E3701A33CD9100162D83 /* SVProgressHUDLesson.swift in Sources */,
 				F5BF0E191A2ECEF100C0C853 /* MainViewController.swift in Sources */,
 			);
