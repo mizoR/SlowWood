@@ -5,12 +5,14 @@ enum LessonType: Int {
     case SVProgressHUD
     case WebView
     case UserDefaults
+    case CollectionView
 
     static let data = [
         AlertDialog,
         SVProgressHUD,
         WebView,
         UserDefaults,
+        CollectionView,
     ]
 
     func title() -> String {
@@ -23,6 +25,8 @@ enum LessonType: Int {
             return "WebViewでGoogleを表示する"
         case .UserDefaults:
             return "クリック数をNSUserDefaultsに保存する"
+        case .CollectionView:
+            return "CollectionViewで画像を表示する"
         default:
             "no title"
         }
@@ -38,6 +42,8 @@ enum LessonType: Int {
             return WebViewLessonFactory()
         case .UserDefaults:
             return UserDefaultsLessonFactory()
+        case .CollectionView:
+            return CollectionViewLessonFactory()
         default:
             fatalError("Factoryクラスの生成処理が定義されていません: \(self)")
         }
