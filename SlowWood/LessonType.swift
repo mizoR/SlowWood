@@ -16,13 +16,13 @@ enum LessonType: Int {
     func title() -> String {
         switch self {
         case .AlertDialog:
-            return "Show alert dialog with UIAlertController"
+            return "アラートダイアログを表示する"
         case .SVProgressHUD:
-            return "Show progress dialog with SVProgressHUD"
+            return "プログレスダイアログを表示する"
         case .WebView:
-            return "Show web with UIWebView"
+            return "WebViewでGoogleを表示する"
         case .UserDefaults:
-            return "Show NSUserDefaults lesson"
+            return "クリック数をNSUserDefaultsに保存する"
         default:
             "no title"
         }
