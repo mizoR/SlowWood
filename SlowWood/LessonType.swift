@@ -26,7 +26,7 @@ enum LessonType: Int {
         case .UserDefaults:
             return "クリック数をNSUserDefaultsに保存する"
         case .CollectionView:
-            return "CollectionViewで画像を表示する"
+            return "CollectionViewでカラフルなセルを表示する"
         default:
             "no title"
         }
