@@ -7,19 +7,21 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as UICollectionViewCell
-        if (indexPath.section + indexPath.row) % 2 == 0 {
-            cell.backgroundColor = UIColor.orangeColor()
-        } else {
-            cell.backgroundColor = UIColor.whiteColor()
-        }
+        let hue = CGFloat(arc4random_uniform(255)) / 255.0
+        cell.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+
         return cell
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 3
+        return 40
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
+    }
+
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        Logger.info("Clicked: \(indexPath.row)-\(indexPath.section)")
     }
 }
