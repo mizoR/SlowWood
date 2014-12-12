@@ -66,6 +66,27 @@
 			remoteGlobalIDString = 92E0D03B19467C67002ACC3D;
 			remoteInfo = Dollar;
 		};
+		F5EED2D71A3ABCB0003740A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		F5EED2D91A3ABCB0003740A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		F5EED2DC1A3ABCD8003740A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +122,7 @@
 		F59900521A302DA700D876E3 /* Fortune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fortune.swift; sourceTree = "<group>"; };
 		F5BF0E181A2ECEF100C0C853 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5BF0E1A1A2ECFE300C0C853 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Submodules/github.com/Alamofire/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		F5FCBCC61A356DAD00A89029 /* WebViewLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLesson.swift; sourceTree = "<group>"; };
 		F5FCBCC91A356DEB00A89029 /* WebViewLessonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLessonFactory.swift; sourceTree = "<group>"; };
 		F5FCBCCB1A356F8100A89029 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +188,7 @@
 		F56565D01A2BDC4B0039858B /* SlowWood */ = {
 			isa = PBXGroup;
 			children = (
+				F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */,
 				6A75E3691A33C9F400162D83 /* AlertDialogLesson.swift */,
 				6A29E84B1A33BCB900D06F75 /* AlertDialogLessonFactory.swift */,
 				F56565D31A2BDC4B0039858B /* AppDelegate.swift */,
@@ -233,6 +256,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F5EED2D31A3ABCB0003740A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5EED2D81A3ABCB0003740A2 /* Alamofire.framework */,
+				F5EED2DA1A3ABCB0003740A2 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +281,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F5EED2DD1A3ABCD8003740A2 /* PBXTargetDependency */,
 				F56974F01A2BE41000DB969E /* PBXTargetDependency */,
 			);
 			name = SlowWood;
@@ -305,6 +338,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F5EED2D31A3ABCB0003740A2 /* Products */;
+					ProjectRef = F5EED2D21A3ABCB0003740A2 /* Alamofire.xcodeproj */;
+				},
+				{
 					ProductGroup = F56974E71A2BE3B600DB969E /* Products */;
 					ProjectRef = F56974E61A2BE3B600DB969E /* Dollar.xcodeproj */;
 				},
@@ -330,6 +367,20 @@
 			fileType = wrapper.cfbundle;
 			path = DollarTests.xctest;
 			remoteRef = F56974ED1A2BE3B600DB969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5EED2D81A3ABCB0003740A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = F5EED2D71A3ABCB0003740A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5EED2DA1A3ABCB0003740A2 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = F5EED2D91A3ABCB0003740A2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -438,6 +489,11 @@
 			isa = PBXTargetDependency;
 			name = Dollar;
 			targetProxy = F56974EF1A2BE41000DB969E /* PBXContainerItemProxy */;
+		};
+		F5EED2DD1A3ABCD8003740A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = F5EED2DC1A3ABCD8003740A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
