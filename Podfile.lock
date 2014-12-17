@@ -1,10 +1,13 @@
 PODS:
-  - SVProgressHUD (HEAD based on 1.1.1)
+  - RaptureXML (HEAD based on 1.0.1)
+  - SVProgressHUD (HEAD based on 1.1.2)
 
 DEPENDENCIES:
+  - RaptureXML (HEAD)
   - SVProgressHUD (HEAD)
 
 SPEC CHECKSUMS:
-  SVProgressHUD: 11ef69ab2582c097479e76905ea916470371fc58
+  RaptureXML: b9b0aca9c68c684c189af73dd5e8f8fdeec74600
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
 
 COCOAPODS: 0.35.0
